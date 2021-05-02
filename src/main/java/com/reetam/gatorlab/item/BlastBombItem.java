@@ -1,12 +1,11 @@
 package com.reetam.gatorlab.item;
 
-import com.reetam.gatorlab.magic.BlastBombSpell;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
 public class BlastBombItem extends Item {
@@ -18,8 +17,7 @@ public class BlastBombItem extends Item {
     @Override
     public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         if (!world.isClientSide()) {
-            BlastBombSpell spell = new BlastBombSpell(new BlockPos(player.position()), world, player);
-            spell.trigger();
+            world.explode(player, null, null, player.getX(), player.getY(), player.getZ(), 2.0F, false, Explosion.Mode.DESTROY);
             return ActionResult.consume(player.getItemInHand(hand));
         }
         return ActionResult.fail(player.getItemInHand(hand));
