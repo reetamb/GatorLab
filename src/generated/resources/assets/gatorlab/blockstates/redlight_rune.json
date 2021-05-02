@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "gatorlab:block/redlight_rune_off"
+    },
+    "powered=true": {
+      "model": "gatorlab:block/redlight_rune_on"
+    }
+  }
+}

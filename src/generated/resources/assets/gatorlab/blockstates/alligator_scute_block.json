@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "gatorlab:block/alligator_scute_block"
+    }
+  }
+}

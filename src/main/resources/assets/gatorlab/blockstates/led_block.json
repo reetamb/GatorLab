@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "gatorlab:block/led_block_0"
+    },
+    "age=1": {
+      "model": "gatorlab:block/led_block_1"
+    },
+    "age=2": {
+      "model": "gatorlab:block/led_block_2"
+    },
+    "age=3": {
+      "model": "gatorlab:block/led_block_3"
+    },
+    "age=4": {
+      "model": "gatorlab:block/led_block_4"
+    },
+    "age=5": {
+      "model": "gatorlab:block/led_block_5"
+    },
+    "age=6": {
+      "model": "gatorlab:block/led_block_6"
+    },
+    "age=7": {
+      "model": "gatorlab:block/led_block_7"
+    },
+    "age=8": {
+      "model": "gatorlab:block/led_block_8"
+    },
+    "age=9": {
+      "model": "gatorlab:block/led_block_9"
+    },
+    "age=10": {
+      "model": "gatorlab:block/led_block_10"
+    },
+    "age=11": {
+      "model": "gatorlab:block/led_block_11"
+    },
+    "age=12": {
+      "model": "gatorlab:block/led_block_12"
+    },
+    "age=13": {
+      "model": "gatorlab:block/led_block_13"
+    },
+    "age=14": {
+      "model": "gatorlab:block/led_block_14"
+    },
+    "age=15": {
+      "model": "gatorlab:block/led_block_15"
+    }
+  }
+}
