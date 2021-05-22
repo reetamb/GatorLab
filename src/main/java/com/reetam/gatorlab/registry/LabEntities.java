@@ -1,7 +1,7 @@
 package com.reetam.gatorlab.registry;
 
 import com.reetam.gatorlab.GatorLab;
-import com.reetam.gatorlab.entity.GearGildEntity;
+import com.reetam.gatorlab.entity.AlligatorEntity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -16,12 +16,12 @@ public class LabEntities {
 
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, GatorLab.MODID);
 
-    public static final EntityType<GearGildEntity> GEAR_GILD_TYPE = EntityType.Builder.of(GearGildEntity::new, EntityClassification.MONSTER)
-            .sized(0.8F, 0.8F).build("gear_gild");
-    public static final RegistryObject<EntityType<GearGildEntity>> GEAR_GILD = ENTITIES.register("gear_gild", () -> GEAR_GILD_TYPE);
+    public static final EntityType<AlligatorEntity> ALLIGATOR_TYPE = EntityType.Builder.of(AlligatorEntity::new, EntityClassification.MONSTER)
+            .sized(0.8F, 0.8F).build("alligator");
+    public static final RegistryObject<EntityType<AlligatorEntity>> ALLIGATOR = ENTITIES.register("alligator", () -> ALLIGATOR_TYPE);
 
     @SubscribeEvent
     public static void registerEntityAttributes(EntityAttributeCreationEvent event) {
-        event.put(LabEntities.GEAR_GILD.get(), GearGildEntity.createAttributes().build());
+        event.put(LabEntities.ALLIGATOR.get(), AlligatorEntity.createAttributes().build());
     }
 }

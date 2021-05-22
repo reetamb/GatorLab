@@ -4,8 +4,8 @@
   "block.gatorlab.led_block": "LED Block",
   "block.gatorlab.redlight_rune": "Redlight Rune",
   "block.gatorlab.weather_detector": "Weather Detector",
+  "item.gatorlab.alligator_spawn_egg": "Alligator Spawn Egg",
   "item.gatorlab.blastbomb": "Blast Bomb Spell",
-  "item.gatorlab.gear_gild_spawn_egg": "Gear Gild Spawn Egg",
   "itemGroup.lab_blocks": "Lab Blocks",
   "itemGroup.lab_items": "Lab Items"
 }

@@ -37,12 +37,11 @@ public class GatorLab {
     }
 
     public void commonSetup(FMLCommonSetupEvent event) {
-        LabCommon.registerDispenserBehavior();
+        LabCommon.register();
     }
 
     public void clientSetup(FMLClientSetupEvent event) {
-        LabClient.registerBlockRenderers();
-        LabClient.registerEntityRenderers();
+        LabClient.register();
     }
 
     public void gatherData(GatherDataEvent event) {

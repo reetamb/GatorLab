@@ -24,6 +24,6 @@ public class LabItemData extends LabItemProvider {
         itemBlock(LabBlocks.WEATHER_DETECTOR);
         itemBlockFlat(LabBlocks.REDLIGHT_RUNE);
         normalItem(LabItems.BLAST_BOMB);
-        egg(LabItems.GEAR_GILD_SPAWN_EGG);
+        egg(LabItems.ALLIGATOR_SPAWN_EGG);
     }
 }

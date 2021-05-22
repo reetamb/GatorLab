@@ -29,6 +29,6 @@ public class LabLang extends LanguageProvider {
         add(LabBlocks.REDLIGHT_RUNE.get(), "Redlight Rune");
 
         add(LabItems.BLAST_BOMB.get(), "Blast Bomb Spell");
-        add(LabItems.GEAR_GILD_SPAWN_EGG.get(), "Gear Gild Spawn Egg");
+        add(LabItems.ALLIGATOR_SPAWN_EGG.get(), "Alligator Spawn Egg");
     }
 }

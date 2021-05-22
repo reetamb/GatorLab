@@ -22,7 +22,11 @@ public class LabCommon {
         }
     };
 
-    public static void registerDispenserBehavior() {
-        DispenserBlock.registerBehavior(LabItems.GEAR_GILD_SPAWN_EGG.get(), eggBehavior);
+    public static void register() {
+        registerDispenserBehavior();
+    }
+
+    private static void registerDispenserBehavior() {
+        DispenserBlock.registerBehavior(LabItems.ALLIGATOR_SPAWN_EGG.get(), eggBehavior);
     }
 }

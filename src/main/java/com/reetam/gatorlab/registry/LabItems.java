@@ -27,5 +27,5 @@ public class LabItems {
     public static final Item.Properties baseProperties = new Item.Properties().tab(itemGroup);
 
     public static final RegistryObject<Item> BLAST_BOMB = ITEMS.register("blastbomb", () -> new BlastBombItem(baseProperties));
-    public static final RegistryObject<Item> GEAR_GILD_SPAWN_EGG = ITEMS.register("gear_gild_spawn_egg", () -> new SpawnEggItem(LabEntities.GEAR_GILD_TYPE, 0xFFFF00, 0x000000, baseProperties));
+    public static final RegistryObject<Item> ALLIGATOR_SPAWN_EGG = ITEMS.register("alligator_spawn_egg", () -> new SpawnEggItem(LabEntities.ALLIGATOR_TYPE, 0x00FF00, 0x008800, baseProperties));
 }
