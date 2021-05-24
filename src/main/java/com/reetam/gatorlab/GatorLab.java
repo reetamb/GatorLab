@@ -3,12 +3,10 @@ package com.reetam.gatorlab;
 import com.reetam.gatorlab.datagen.LabBlockData;
 import com.reetam.gatorlab.datagen.LabItemData;
 import com.reetam.gatorlab.datagen.LabLang;
-import com.reetam.gatorlab.registry.LabBlocks;
-import com.reetam.gatorlab.registry.LabEntities;
-import com.reetam.gatorlab.registry.LabItems;
-import com.reetam.gatorlab.registry.LabTileEntities;
+import com.reetam.gatorlab.registry.*;
 import com.reetam.gatorlab.setup.LabClient;
 import com.reetam.gatorlab.setup.LabCommon;
+import com.reetam.gatorlab.world.biome.nether.util.LabNetherBiomeProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -34,10 +32,12 @@ public class GatorLab {
         LabEntities.ENTITIES.register(bus);
         LabItems.ITEMS.register(bus);
         LabTileEntities.TILE_ENTITIES.register(bus);
+        LabBiomes.BIOMES.register(bus);
     }
 
     public void commonSetup(FMLCommonSetupEvent event) {
         LabCommon.register();
+        event.enqueueWork(LabNetherBiomeProvider::registerBiomeProvider);
     }
 
     public void clientSetup(FMLClientSetupEvent event) {
