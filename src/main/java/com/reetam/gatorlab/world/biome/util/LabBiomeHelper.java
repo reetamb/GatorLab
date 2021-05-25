@@ -1,4 +1,4 @@
-package com.reetam.gatorlab.world.biome.nether.util;
+package com.reetam.gatorlab.world.biome.util;
 
 import com.reetam.gatorlab.GatorLab;
 import net.minecraft.util.ResourceLocation;

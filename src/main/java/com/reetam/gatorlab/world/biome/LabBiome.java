@@ -1,4 +1,4 @@
-package com.reetam.gatorlab.world.biome.nether;
+package com.reetam.gatorlab.world.biome;
 
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeAmbience;

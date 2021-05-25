@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.reetam.gatorlab.setup.mixin",
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "aether.refmap.json",
+  "mixins": [
+    "common.MixinDimensionGeneratorSettings",
+    "common.MixinDimensionType"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

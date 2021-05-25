@@ -1,8 +1,8 @@
-package com.reetam.gatorlab.world.biome.nether.biomes;
+package com.reetam.gatorlab.world.biome.biomes;
 
 import com.reetam.gatorlab.registry.LabBiomes;
-import com.reetam.gatorlab.world.biome.nether.LabBiome;
-import com.reetam.gatorlab.world.biome.nether.util.LabBiomeHelper;
+import com.reetam.gatorlab.world.biome.LabBiome;
+import com.reetam.gatorlab.world.biome.util.LabBiomeHelper;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.particles.ParticleTypes;
@@ -11,7 +11,6 @@ import net.minecraft.world.biome.*;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 
 public class PerniciousGardensBiome extends LabBiome {
     @Override
@@ -34,7 +33,7 @@ public class PerniciousGardensBiome extends LabBiome {
         ambience
                 .waterColor(13408563)
                 .waterFogColor(10053120)
-                .fogColor(-2916568)
+                .fogColor(29165680)
                 .skyColor(LabBiomeHelper.calcSkyColor(2.0f))
                 .ambientParticle(new ParticleEffectAmbience(ParticleTypes.PORTAL, 0.118093334F))
                 .ambientLoopSound(SoundEvents.AMBIENT_CAVE)
@@ -48,7 +47,7 @@ public class PerniciousGardensBiome extends LabBiome {
 
     @Override
     protected ConfiguredSurfaceBuilder<?> configureSurfaceBuilder() {
-        return LabBiomeHelper.newConfiguredSurfaceBuilder("pernicious_gardens", new ConfiguredSurfaceBuilder(SurfaceBuilder.NETHER_FOREST, LabBiomes.LabSurfaceBuilders.PERNICIOUS_GARDENS_CONFIG));
+        return LabBiomeHelper.newConfiguredSurfaceBuilder("pernicious_gardens", new ConfiguredSurfaceBuilder(LabBiomes.PERNICIOUS_GARDENS_SURFACE_BUILDER, LabBiomes.PERNICIOUS_GARDENS_CONFIG));
     }
 
     @Override

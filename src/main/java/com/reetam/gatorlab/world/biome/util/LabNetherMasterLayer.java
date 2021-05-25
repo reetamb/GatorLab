@@ -1,4 +1,4 @@
-package com.reetam.gatorlab.world.biome.nether.util;
+package com.reetam.gatorlab.world.biome.util;
 
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
